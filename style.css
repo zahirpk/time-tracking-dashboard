@@ -1,0 +1,362 @@
+@import url('https://fonts.googleapis.com/css2?family=Rubik:wght@300;400;500&display=swap');
+
+:root {
+    --blue: #5847EB;
+    --light-red-work: #FF8C66;
+    --soft-blue-play: #56C2E6;
+    --Light-red-study: #FF5C7C;
+    --Lime-green-exercise: #4ACF81;
+    --Violet-social: #7536D3;
+    --Soft-orange-self-care: #F1C65B;
+    --Very-dark-blue: #0F1424;
+    --Dark-blue: #1C1F4A;
+    --Desaturated-blue: #6F76C8;
+    --Pale-Blue: #BDC1FF
+}
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-size: 18px;
+    font-family: 'Rubik', sans-serif;
+    width: 100vw;
+    min-height: 100vh;
+    background-color: var(--Very-dark-blue);
+    color: white;
+}
+
+.flex-container {
+    padding: 2rem 1rem;
+}
+
+.top-container {
+    width: 100%;
+    height: 200px;
+    background-color: var(--Dark-blue);
+    border-radius: 10px;
+    margin-bottom: 2rem;
+    margin-top: 1rem;
+    position: relative;
+    overflow: hidden;
+}
+
+.avatar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: var(--blue);
+    padding: 2rem;
+    width: 100%;
+    height: 130px;
+    border-radius: 10px;
+}
+
+.avatar-image {
+    width: 25%;
+}
+
+.avatar-image img {
+    width: 100%;
+    border-radius: 50%;
+    background-color: white;
+    padding: 0.15rem;
+}
+
+h3 {
+    font-weight: 300;
+    color: rgb(215, 214, 214);
+}
+
+p {
+    font-weight: 300;
+    color: rgb(215, 214, 214);
+}
+
+h2 {
+    font-weight: 300;
+    font-size: 1.5em;
+}
+
+.progressContainer {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    height: 60px;
+}
+
+.progressContainer p {
+    color: var(--blue);
+}
+
+p:hover,
+h2:hover {
+    cursor: pointer;
+    color: white;
+}
+
+.container,
+.play,
+.study,
+.exercise,
+.social,
+.selfCare {
+    width: 100%;
+    height: 170px;
+    background-color: var(--light-red-work);
+    border-radius: 15px;
+    margin-bottom: 1.5rem;
+    margin-bottom: 2rem;
+    overflow: hidden;
+    position: relative;
+    background-image: url(images/icon-work.svg);
+    background-repeat: no-repeat;
+    background-position-x: 98%;
+}
+
+.work-container {
+    background-color: var(--Dark-blue);
+    color: #0F1424;
+    width: 100%;
+    border-radius: 15px;
+    height: 130px;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    padding: 0rem 2.5rem;
+}
+
+.work-container:hover {
+    background-color: var(--Desaturated-blue);
+    cursor: pointer;
+}
+
+.time,
+.title {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+#titleName {
+    font-weight: 500;
+    color: white;
+}
+
+.daily {
+    font-size: 1.5em;
+    font-weight: 300;
+    color: white;
+}
+
+.play {
+    background-color: var(--soft-blue-play);
+    background-image: url(images/icon-play.svg);
+}
+
+.study {
+    background-color: var(--Light-red-study);
+    background-image: url(images/icon-study.svg);
+}
+
+.exercise {
+    background-color: var(--Lime-green-exercise);
+    background-image: url(images/icon-exercise.svg);
+}
+
+.social {
+    background-color: var(--Violet-social);
+    background-image: url(images/icon-social.svg);
+}
+
+.selfCare {
+    background-color: var(--Soft-orange-self-care);
+    background-image: url(images/icon-self-care.svg);
+}
+
+@media(min-width:30em) {
+
+    .top-container,
+    .container {
+        width: 90%;
+        margin-bottom: 2rem;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    .text-section {
+        padding-right: 3.5rem;
+    }
+}
+
+@media(min-width:40em) {
+
+    .top-container,
+    .container {
+        width: 85%;
+        margin-bottom: 2rem;
+    }
+
+    .avatar-image {
+        width: 17%;
+    }
+
+    .text-section {
+        padding-right: 8.5rem;
+    }
+}
+
+@media(min-width:60em) {
+
+    .top-container,
+    .container {
+        width: 75%;
+        margin-bottom: 2rem;
+    }
+
+    .text-section {
+        padding-right: 5.5rem;
+    }
+}
+
+@media(min-width:64em) {
+
+    .top-container,
+    .container {
+        width: 70%;
+        margin-bottom: 2rem;
+    }
+
+    .avatar-image {
+        width: 15%;
+    }
+
+    .text-section {
+        padding-right: 20.5rem;
+    }
+}
+
+@media(min-width:80em) {
+    body {
+        background-color: white;
+        width: 60vw;
+        margin: auto;
+    }
+
+    .flex-container {
+        background-color: var(--Very-dark-blue);
+    }
+
+    .top-container,
+    .container {
+        width: 80%;
+        margin-bottom: 2rem;
+    }
+
+    .avatar-image {
+        width: 15%;
+    }
+
+    .text-section {
+        padding-right: 15.5rem;
+    }
+}
+
+@media(min-width:90em) {
+    body {
+        background-color: var(--Very-dark-blue);
+        width: 100vw;
+    }
+
+    .flex-container {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        height: 100vh;
+        width: 50vw;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    main {
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+        grid-template-rows: repeat(2, 1fr);
+        gap: 20px;
+    }
+
+    .top-container,
+    .container {
+        height: 250px;
+        width: 250px;
+        margin-left: auto;
+        margin-right: auto;
+        margin-top: 0;
+        margin-bottom: 0;
+    }
+
+    .top-container {
+        height: 520px;
+    }
+
+    .work-container {
+        height: 210px;
+    }
+
+    .top-container {
+        grid-column: 1;
+        grid-row: 1/3;
+    }
+
+    .time {
+        flex-direction: column;
+    }
+
+    .avatar {
+        height: 350px;
+        flex-direction: column;
+        justify-content: space-around;
+        align-items: self-start;
+        margin: 0;
+        padding: 2rem;
+    }
+
+    .avatar-image {
+        width: 50%;
+    }
+
+    h2 {
+        font-size: 2.25em;
+    }
+
+    .text-section {
+        padding-right: 0.5rem;
+    }
+
+    .progressContainer {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        align-items: self-start;
+        padding: 2rem;
+    }
+
+    .progressContainer p {
+        padding: 0.5rem 0rem;
+    }
+
+    .daily {
+        font-size: 2.75em;
+    }
+
+    #previous {
+        font-size: 0.8em;
+    }
+}

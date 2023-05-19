@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="style.css">
+
+  <title>Frontend Mentor | Time tracking dashboard</title>
+</head>
+
+<body>
+  <div class="flex-container">
+    <main>
+      <div class="top-container">
+        <div class="avatar">
+          <div class="avatar-image"><img src="images/image-jeremy.png" alt="images"></div>
+          <div class="text-section">
+            <p> Report for</p>
+            <h2>Jeremy Robson</h2>
+          </div>
+        </div>
+        <div class="progressContainer">
+          <div>
+            <p id="daily" onclick="dailyProgress()">Daily</h3>
+          </div>
+          <div>
+            <p id="weekly" onclick="weeklyProgress()">Weekly</h3>
+          </div>
+          <div>
+            <p id="monthly" onclick="monthlyProgress()">Monthly</h3>
+          </div>
+        </div>
+      </div>
+      <div class="work container">
+        <div class="work-container">
+          <div class="title">
+            <div>
+              <p id="titleName">Work</p>
+            </div>
+            <div><img src="images/icon-ellipsis.svg" alt="icon-ellipsis"></div>
+          </div>
+          <div class="time">
+            <div>
+              <p class="daily">32hrs</p>
+            </div>
+            <div>
+              <p id="previous">last Week - 36hrs</p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class=" play container">
+        <div class="work-container">
+          <div class="title">
+            <div>
+              <p id="titleName">Play</p>
+            </div>
+            <div><img src="images/icon-ellipsis.svg" alt="icon-ellipsis"></div>
+          </div>
+          <div class="time">
+            <div>
+              <p class="daily">10hrs</p>
+            </div>
+            <div>
+              <p id="previous">last Week - 8hrs</p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class=" study container">
+        <div class="work-container">
+          <div class="title">
+            <div>
+              <p id="titleName">Study</p>
+            </div>
+            <div><img src="images/icon-ellipsis.svg" alt="icon-ellipsis"></div>
+          </div>
+          <div class="time">
+            <div>
+              <p class="daily">4hrs</p>
+            </div>
+            <div>
+              <p id="previous">last Week - 7hrs</p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class=" exercise container">
+        <div class="work-container">
+          <div class="title">
+            <div>
+              <p id="titleName">Exercise</p>
+            </div>
+            <div><img src="images/icon-ellipsis.svg" alt="icon-ellipsis"></div>
+          </div>
+          <div class="time">
+            <div>
+              <p class="daily">4hrs</p>
+            </div>
+            <div>
+              <p id="previous">last Week - 5hrs</p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class=" social container">
+        <div class="work-container">
+          <div class="title">
+            <div>
+              <p id="titleName">Social</p>
+            </div>
+            <div><img src="images/icon-ellipsis.svg" alt="icon-ellipsis"></div>
+          </div>
+          <div class="time">
+            <div>
+              <p class="daily">5hrs</p>
+            </div>
+            <div>
+              <p id="previous">last Week - 5hrs</p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class=" selfCare container">
+        <div class="work-container">
+          <div class="title">
+            <div>
+              <p id="titleName">Self Care</p>
+            </div>
+            <div><img src="images/icon-ellipsis.svg" alt="icon-ellipsis"></div>
+          </div>
+          <div class="time">
+            <div>
+              <p class="daily">2hrs</p>
+            </div>
+            <div>
+              <p id="previous">last Week - 2hrs</p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+    </main>
+  </div>
+  <script src="script.js"></script>
+</body>
+
+</html>
